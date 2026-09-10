@@ -95,7 +95,10 @@ print("F= ",F)
 
 ```
 
-
+```{python}
+anova= {'FUENTE': ['Regresión', 'Error', 'Total'], 'SS': [SSR, SSE, SST], 'df': [dfregresion, dfferror, dftotal], 'MS':[MSR, MSE, 'X'], 'F': [F, 'x', 'x']}
+pd.DataFrame(anova)
+```
 ```{python}
 tB1= (B1-0)/math.sqrt(MSE/Sxx)
 print("Prueba t para B1 t= ", tB1) 
